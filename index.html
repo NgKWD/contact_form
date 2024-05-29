@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Session Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: url('maximalfocus-VT4rx775FT4-unsplash.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #fff;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .form-group input[type="submit"] {
+            width: auto;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .radio-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: rgba(0, 123, 255, 0.1);
+            border-radius: 3px;
+        }
+        .radio-group label {
+            margin-right: 10px;
+        }
+        .required-label:after {
+            content: " *";
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Cybersecurity Session Registration</h1>
+<form id="registrationForm" action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="c465f72e-6231-4f6f-9804-a94cf05b1dcb">
+
+    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+
+    <div class="form-group">
+        <label for="name" class="required-label">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+        <label for="email" class="required-label">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="phone" class="required-label">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+    </div>
+    <div class="form-group">
+        <label for="company" class="required-label">Company/Organization:</label>
+        <input type="text" id="company" name="company" required>
+    </div>
+    <div class="form-group">
+        <label for="job_title" class="required-label">Job Title:</label>
+        <input type="text" id="job_title" name="job_title" required>
+    </div>
+    <div class="form-group">
+        <label for="session_date" class="required-label">Preferred Session Date:</label>
+        <input type="date" id="session_date" name="session_date" required>
+    </div>
+    <div class="form-group">
+        <label for="message">Additional Information:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+    </div>
+    <div class="form-group radio-group">
+        <label class="required-label"><input type="radio" name="plan" value="free" required> Free</label>
+        <label class="required-label"><input type="radio" name="plan" value="basic" required> Basic</label>
+        <label class="required-label"><input type="radio" name="plan" value="pro" required> Pro</label>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Register">
+    </div>
+</form>
+
+</body>
+</html>
